@@ -1,5 +1,5 @@
 {
-  "install": "pip3 install --user -r requirements.txt",
+  "install": "pip3 install --user -r requirements.txt; pip3 uninstall --yes pyhton3-protobuf; pip3 uninstall --yes protobuf; yes | pip3 install protobuf; ",
   "start": "PYTHONUNBUFFERED=true python3 main.py",
   "watch": {
     "ignore": ["\\.pyc$"],
