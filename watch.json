@@ -1,0 +1,13 @@
+{
+  "install": {
+    "include": []
+  },
+  "restart": {
+    "exclude": [
+    ],
+    "include": [
+      "\\restart.log$"
+    ]
+  },
+  "throttle": 100
+}

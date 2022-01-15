@@ -1,6 +1,6 @@
 *.log
 poetry.*
-*.json
+*-*.json
 restart.*
 package-lock.*
 /node_modules
