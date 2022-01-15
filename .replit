@@ -1,0 +1,2 @@
+language = "python3"
+run = "while [ true ]; do npm install nodemon; sleep 1; npx nodemon -L -x 'pip uninstall --yes pyhton3-protobuf; pip uninstall --yes protobuf; yes | pip install protobuf; killall python; killall python3; killall prybar-python3; sleep 1; python main.py || sleep 1; echo $(date +'%Y/%d/%m_%H:%M:%S') >> restart.log' --watch restart.log; continue; done"
