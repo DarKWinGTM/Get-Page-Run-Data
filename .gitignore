@@ -1,0 +1,7 @@
+*.log
+poetry.*
+*.json
+restart.*
+package-lock.*
+/node_modules
+/node_modules/*
