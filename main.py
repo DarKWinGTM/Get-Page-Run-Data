@@ -475,7 +475,7 @@ class WEBCHECK():
         self.resp.append(
             grequests.map(self.load)
         )
-            
+        
         for self.aaaa, self.bbbb in enumerate( self.resp ):
             
             self.list.append([])
@@ -622,7 +622,6 @@ class WEBCHECK():
         self.resp.append(
             grequests.map(self.load)
         )
-            
         for self.aaaa, self.bbbb in enumerate( self.resp ):
             
             self.list.append([])
@@ -644,16 +643,16 @@ class WEBCHECK():
                     
                     self.gate[self.cccc] = None
                     
-                    print( f'{ timedate.now() } { self.thread } 503 : {self.cccc:02n}', self.load[self.cccc].url, [
+                    print( f'{ timedate.now() } 503 : {self.cccc:02n}', self.load[self.cccc].url, [
                         self.eeee[ self.cccc ] for self.eeee in self.list
                     ] )
                     
-                    PYREPLIT(
-                        repl = '/'.join([
-                            re.split('/|\.', self.load[self.cccc].url)[3], 
-                            re.split('/|\.', self.load[self.cccc].url)[2]
-                        ])
-                    ).gits()
+                    #   PYREPLIT(
+                    #       repl = '/'.join([
+                    #           re.split('/|\.', self.load[self.cccc].url)[3], 
+                    #           re.split('/|\.', self.load[self.cccc].url)[2]
+                    #       ])
+                    #   ).gits()
                     if random.randrange(100) >= 86:
                         PYREPLIT(
                             repl = '/'.join([
@@ -675,15 +674,15 @@ class WEBCHECK():
                         ])
                     ).shell()
                     
-                    try     : 
-                        if not self.root[self.cccc] == '':
-                            #   _thread.start_new_thread(requests.get(self.root[self.cccc]) , ())
-                            _thread.start_new_thread(requests.get(f'{ self.load[self.cccc].url }/__tail', timeout = 16), ())
-                    except  : pass
-                    try     : 
-                        if not self.root[self.cccc] == '':
-                            _thread.start_new_thread(requests.get(f'https://render-tron.appspot.com/screenshot/{ self.root[self.cccc] }', timeout = 16), ())
-                    except  : pass
+                    #   try     : 
+                    #       if not self.root[self.cccc] == '':
+                    #           #   _thread.start_new_thread(requests.get(self.root[self.cccc]) , ())
+                    #           _thread.start_new_thread(requests.get(f'{ self.load[self.cccc].url }/__tail', timeout = 16), ())
+                    #   except  : pass
+                    #   try     : 
+                    #       if not self.root[self.cccc] == '':
+                    #           _thread.start_new_thread(requests.get(f'https://render-tron.appspot.com/screenshot/{ self.root[self.cccc] }', timeout = 16), ())
+                    #   except  : pass
 
                 elif (len([
                     self.eeee[ self.cccc ] for self.eeee in self.list if self.eeee[ self.cccc ] == 200
@@ -693,8 +692,7 @@ class WEBCHECK():
                 
                     self.gate[self.cccc] = True
                     
-
-                    print( f'{ timedate.now() } { self.thread } 200 : {self.cccc:02n}', self.load[self.cccc].url )
+                    print( f'{ timedate.now() } 200 : {self.cccc:02n}', self.load[self.cccc].url )
 
                     #   if random.randrange(100) >= 50:
                     #       chk_token(
@@ -703,25 +701,25 @@ class WEBCHECK():
                     #           __sid__.strip()
                     #       )
                     
-                    try     : 
-                        if not self.root[self.cccc] == '':
-                            _thread.start_new_thread(requests.get(self.root[self.cccc], timeout = 16) , ())
-                    except  : pass
+                    #   try     : 
+                    #       if not self.root[self.cccc] == '':
+                    #           _thread.start_new_thread(requests.get(self.root[self.cccc], timeout = 16) , ())
+                    #   except  : pass
                     #   try     : 
                     #       if not self.root[self.cccc] == '':
                     #           _thread.start_new_thread(requests.get(f'https://render-tron.appspot.com/screenshot/{ self.root[self.cccc] }'), ())
                     #   except  : pass
                     
-                    try     : 
-                        
-                        _thread.start_new_thread(requests.get(f'{ self.load[self.cccc].url }/__tail', timeout = 16), ())
-                    except  : pass
+                    #   try     : 
+                    #       
+                    #       _thread.start_new_thread(requests.get(f'{ self.load[self.cccc].url }/__tail', timeout = 16), ())
+                    #   except  : pass
                     #   try     : _thread.start_new_thread(requests.post(self.load[self.cccc].url.replace('/login', ''), timeout = 16), ())
                     #   except  : pass
                     #   try     : _thread.start_new_thread(requests.get(f'https://render-tron.appspot.com/screenshot/{ self.load[self.cccc].url.replace("/login", "") }', timeout = 16), ())
                     #   except  : pass
                     
-        print('\n'.join([str( f'{ timedate.now() } { self.thread } DONE ' + str(x) ) for x in self.list]))
+        print('\n'.join([str( f'{ timedate.now() } DONE ' + str(x) ) for x in self.list]))
         #   time.sleep( random.randrange( 80, 160 ) )
         
         
@@ -1183,7 +1181,7 @@ while True:
         'PatiwatNumbut/awcloud-data-00001nanthakawut191', 
         #-  'PatiwatNumbut/awcloud-data-werayutphonyut',  
         #-  'PatiwatNumbut/awcloud-data-rachan7428',  
-        'sophonnjk',  
+        'PatiwatNumbut/awcloud-data-sophonnjk',  
         #-  'PatiwatNumbut/awcloud-data-Mazajan2011',  
         'PatiwatNumbut/awcloud-data-jakkapongw',  
         #   'PatiwatNumbut/awcloud-data-sinlapa',  
