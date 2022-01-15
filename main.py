@@ -432,7 +432,7 @@ class WEBCHECK():
             self.thread = _thread.start_new_thread(self.ace, ())
         if self.mode == 'get':
             self.get()
-            
+      
 
     def run(
         self
@@ -580,7 +580,6 @@ class WEBCHECK():
         #   time.sleep( random.randrange( 80, 160 ) )
     
     
-    
     def get(
         self
     ):
@@ -721,7 +720,6 @@ class WEBCHECK():
                     
         print('\n'.join([str( f'{ timedate.now() } DONE ' + str(x) ) for x in self.list]))
         #   time.sleep( random.randrange( 80, 160 ) )
-        
         
         
     def chk(
